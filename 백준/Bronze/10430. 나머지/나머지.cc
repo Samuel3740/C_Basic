@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-	int a, b, c = 0;
-	cin >> a >> b >> c;
-	cout << (a + b) % c << endl;
-	cout << ((a % c) + (b % c)) % c << endl;
-	cout << (a * b) % c << endl;
-	cout << (((a % c) * (b % c)))%c << endl;
+	int A, B, C = 0;
+	cin >> A >>B >> C;
+    
+	cout << (A + B) % C << endl;
+	cout << ((A % C) + (B % C)) % C << endl;
+	cout << (A * B) % C << endl;
+	cout << (((A % C) * (B % C))) % C << endl;
 }
