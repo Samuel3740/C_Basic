@@ -1,17 +1,23 @@
-#define _CRT_SECURE_NO_WARNINGS
-#define max(x, y) ((x) > (y) ? (x) : (y))
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main() {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    if (a == b && b == c)
-        printf("%d", 10000 + a*1000);
-    else if (a == b || a == c)
-        printf("%d", 1000 + a*100);
-    else if (b == c)
-        printf("%d", 1000 + b*100);
-    else
-        printf("%d", max(max(a, b), c)*100);
-    return 0;
+int main(){
+    int A, B, C, money;
+    cin >> A >> B >> C;
+    
+    if(A == B && B == C)
+        money = 10000 + (A * 1000);        
+    else if(A == B)
+        money = 1000 + (A * 100);        
+    else if(B == C)
+        money = 1000 + (B * 100);        
+    else if(A == C)
+        money = 1000 + (C * 100);
+    else if((A > B) && (A > C))
+            money = A * 100;
+    else if ((B > A) && (B > C))
+            money = B * 100;
+    else if ((C > B) && (C > A))
+            money = C * 100;    
+    cout << money << endl;
 }
