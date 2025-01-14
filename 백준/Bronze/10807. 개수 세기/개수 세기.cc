@@ -1,20 +1,23 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main(){
-	int arrlength, input; 
+	int N, input; 
     int num = 0; 
-	cin >> arrlength;
+	cin >> N;
     
-	int* arr = new int[arrlength];
+	vector<int> arr(N);
     
-	for(int i = 0; i < arrlength; i++){
+	for(int i = 0; i < N; i++){
         cin >> arr[i];
     }
 	cin >> input;
     
-	for(int i = 0; i < arrlength; i++){
-        if (input == arr[i]) ++num;
+	for(int i = 0; i < N; i++){
+        if (input == arr[i]){
+            ++num;
+        }
     }
 	cout << num;
 }
