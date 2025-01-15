@@ -9,8 +9,7 @@ int main(){
     
     for(int i = 0; i < 10; ++i){
         cin >> arr[i];
-        int remainder = arr[i] % 42; 
-
+        int remainder = arr[i] % 42;
         if(!n[remainder]){
             n[remainder] = true;
             count += 1;
