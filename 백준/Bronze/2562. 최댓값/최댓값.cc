@@ -1,19 +1,22 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main(){
-    int max = 0;
-    int count;
-    
+    int count = 0;
     vector<int> arr(9);
+    int max = arr[0];
     
-    for(int i = 0; i < 9; i++){
+    for(int i = 0; i < 9; ++i){
         cin >> arr[i];
-        if(arr[i] >= max){
+    }
+    
+    for(int i = 0; i < 9; ++i){
+        if(max < arr[i]){
             max = arr[i];
-            count = i;
+            count = i + 1;
         }
     }
-    cout << max << endl << count + 1 << endl;
+    cout << max << endl << count << endl;
 }
