@@ -2,7 +2,9 @@
 using namespace std;
 
 int main(){
-	string input; int N; int count = 0;
+    int N; 
+    int count = 0;
+	string input; 
 	cin >> N;
     
 	for (int i = 0; i < N; ++i){
