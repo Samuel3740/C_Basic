@@ -3,14 +3,14 @@
 using namespace std;
 
 int main(){
-    int B, result = 0;
-    string N;
-    string charMap = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int N;
+    int result = 0;
+    string str;
+    
+    cin >> str >> N;
 
-    cin >> N >> B;
-
-    for (char c : N){
-        result = result * B + charMap.find(c);
+    for(char c : str){ 
+        result = result * N + (isdigit(c) ? c - '0' : c - 'A' + 10);
     }
 
     cout << result;
