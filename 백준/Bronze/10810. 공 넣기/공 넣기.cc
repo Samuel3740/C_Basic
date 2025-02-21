@@ -1,22 +1,22 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 
+int arr[100];
+int N, M;
+
 int main(){
-    int N, M, i, j, k; 
     cin >> N >> M;
     
-    vector<int> arr(N, 0);
-    
-    for(int n = 0; n < M; ++n){
+    while (M--)
+    {
+        int i, j, k;
         cin >> i >> j >> k;
-        for(int n = i - 1; n < j; ++n){
-            arr[n] = k;
+        for(int u = i; u <= j; u++){
+            arr[u] = k;
         }
     }
     
-    for(int u = 0; u < N; ++u){
-        cout << arr[u] << " ";
+    for(int i = 1; i <= N; ++i){
+        cout << arr[i] << ' ';
     }
 }
