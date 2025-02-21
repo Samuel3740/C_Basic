@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main()
-{
+int main(){
     int sum = 0;
 	string input; 
 	cin >> input;
