@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
     int x, y;
+    
     cin >> x;
     cin >> y;
     
@@ -14,5 +15,4 @@ int main(){
         cout << "3" << endl;
     else
         cout << "4" << endl;    
-    
 }
