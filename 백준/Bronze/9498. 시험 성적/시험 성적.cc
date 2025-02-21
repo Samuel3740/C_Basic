@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
     int score;
+    
     cin >> score;
     
     if (score <= 100 && score >= 90) 
@@ -19,5 +20,4 @@ int main(){
     
     else
         cout << "F" << endl;    
-    
 }
