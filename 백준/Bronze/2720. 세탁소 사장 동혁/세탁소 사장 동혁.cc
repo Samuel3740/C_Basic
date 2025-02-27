@@ -1,35 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class charge{
-private:
-    int Quarter, Dime, Nickel, Penny;
-
-public:
-    void Change_Exchange(int input){
-        Quarter = input / 25;
-        Penny = input % 25;
-
-        Dime = Penny / 10;
-        Penny %= 10;
-
-        Nickel = Penny / 5;
-        Penny %= 5;
-
-        cout << Quarter << " " << Dime << " " << Nickel << " " << Penny << endl;
-    }
-};
-
 int main(){
-    int T;
+    int T, C, Q, D, N, P, tmp;
+
     cin >> T;
 
-    charge func;
-
-
     for(int i = 0; i < T; ++i){
-        int input;
-        cin >> input;
-        func.Change_Exchange(input);
+        cin >> C;
+
+        Q = C / 25;
+        tmp = C % 25;
+
+        D = tmp / 10;
+        tmp = tmp % 10;
+
+        N = tmp / 5;
+        tmp = tmp % 5;
+
+        P = tmp;
+
+        cout <<  Q << " " << D << " " << N << " " << P << endl;
     }
 }
