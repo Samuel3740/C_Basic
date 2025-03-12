@@ -9,6 +9,6 @@ int main(){
         cin >> bottles[i];
         total += bottles[i] * 5; 
     }
-
-    cout << total << endl;
+    
+    cout << total;
 }
