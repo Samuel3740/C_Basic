@@ -5,5 +5,5 @@ int main(){
     int n;
 
     cin >> n;
-    cout << n * 4000 << endl;
+    cout << n * 4000;
 }
