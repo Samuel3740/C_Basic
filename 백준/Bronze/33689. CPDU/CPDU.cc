@@ -13,7 +13,7 @@ int main(){
 
         cin >> s;
 
-        if(!s.empty() && s[0] == 'C'){
+        if(s[0] == 'C'){
             count++;
         }
     }
