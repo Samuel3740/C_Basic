@@ -8,7 +8,5 @@ int main() {
 	long long n;
 	cin >> n;
 
-	cout << ((n & (n - 1)) == 0 ? 1 : 0) << endl;
-
-	return 0;
+	cout << ((n & (n - 1)) == 0 ? 1 : 0);
 }
