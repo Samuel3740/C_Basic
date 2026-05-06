@@ -18,5 +18,6 @@ int solution(int angle) {
         answer = 4;
     }
     
+    
     return answer;
 }
